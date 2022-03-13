@@ -162,7 +162,7 @@ type
 
 //-----------------------Pointer functions------------------------
 type TProcedureOfObject=procedure () of object;
-     TStreamLikeWrite = procedure(const Buffer; Count: NativeInt) of object;
+     TStreamLikeWrite = procedure(const Buffer; Count: LongInt) of object;
 function procedureToMethod(proc: TProcedure): TMethod;
 function makeMethod(code, data: pointer): TMethod; {$IFDEF HASINLINE} inline; {$ENDIF}
 
